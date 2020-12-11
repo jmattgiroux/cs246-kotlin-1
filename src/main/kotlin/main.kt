@@ -18,6 +18,7 @@ class Die (sides : Int){
         println("d$sides -> $result")
     }
 
+//    https://stackoverflow.com/questions/45685026/how-can-i-get-a-random-number-in-kotlin
     fun roll(){
         result = (1..(sides)).random()
     }
@@ -27,18 +28,31 @@ class Die (sides : Int){
 class DiceBag (){
     private var diceBag = ArrayList<Die>(0)
 
+//    https://kotlinlang.org/docs/reference/control-flow.html
     fun rollAll(){
 //        loop that calls roll() and display() for each element of diceBag
+        for (item : Die in diceBag)
+        {
+            item.roll()
+            item.display()
+        }
+    }
 
+    fun add(die : Die){
+        diceBag.add(die)
     }
 }
 
 
 fun main(args: Array<String>) {
 
-    val d4 = Die(4)
-    d4.roll()
-    d4.display()
-
+    val bag = DiceBag()
+    bag.add(Die(2))
+    bag.add(Die(4))
+    bag.add(Die(6))
+    bag.add(Die(8))
+    bag.add(Die(10))
+    bag.add(Die(12))
+    bag.rollAll()
 
 }
