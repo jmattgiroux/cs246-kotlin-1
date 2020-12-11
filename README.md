@@ -1,14 +1,14 @@
 #cs246-kotlin-1
 
-Description:
+Description: Implementation of a Die class and a DiceBag class, that will be used in a later project. Everything is accessed through the DiceBag class, and the only ways the Dicebag class is through adding Die to it and through the rollAll() function.
 
 Requirements:
-- Variables (mutable and immutable)
-- Expressions
-- Conditionals
-- Loops
-- Functions
-- Classes
+- Variables (mutable and immutable) (Done)
+- Expressions (Done)
+- Conditionals (Not Done)
+- Loops (Done)
+- Functions (Done)
+- Classes (Done)
 
 
 Development Environment:
@@ -24,6 +24,10 @@ Java Version 8 Update 271 (build 1.8.0_271-b09)
 Build and Execution:
 
 Screenshots:
+
+- Output
+
+![screenshot of output](https://github.com/jmattgiroux/cs246-kotlin-1/blob/master/output.png) 
 
 Useful Websites:
 
